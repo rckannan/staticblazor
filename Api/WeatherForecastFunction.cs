@@ -43,7 +43,7 @@ namespace BlazorApp.Api
             var result = Enumerable.Range(1, 5).Select(index => new WeatherForecast
             {
                 Date = DateTime.Now.AddDays(index),
-                TemperatureC = temp = randomNumber.Next(-20, 55),
+                TemperatureC = temp = randomNumber.Next(-20, 500),
                 Summary = GetSummary(temp)
             }).ToArray();
 
